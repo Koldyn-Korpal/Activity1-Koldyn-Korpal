@@ -84,31 +84,37 @@ If you don't have a terminal open then you can select the View dropdown and sele
 
 `python chromedino.py`
 
-If you got your game to run then great! Now it is time to make a pull request.
+If you got your game to run then great! Make sure to push on github desktop otherwise your changes won't show up on the web. 
+
+Now it is time to make a pull request.
 
 **Step 4:** Go onto GitHub on the web to your fork and create a pull request. Under the pull requests tab you can make a new pull request. 
 
 **Make sure to switch the base off of the main repository and onto your forked one**
 
+![image](https://github.com/Madeline-Ellingson/CIS496-GitActivity/assets/93016306/aea29b38-fe27-40e0-a36b-a376f667c660)
+
 The window should then look like this...
 
 ![image](https://github.com/Madeline-Ellingson/CIS496-GitActivity/assets/93016306/b3782dc7-48bf-41bc-84d8-9d92a71bb2df)
+
+Go ahead and hit create.
 
 From there hit create pull request. You will now see a window that looks like this below...
 
 ![image](https://github.com/Madeline-Ellingson/CIS496-GitActivity/assets/93016306/c024cf79-ed5a-430a-914f-9a1239c63180)
 
-Wow! That is very blank. **This is not good practice.** Go ahead and hit create anyways. 
+Wow! That is very blank. **This is not good practice.**  
 
 You now have a blank PR!
-
-![image](https://github.com/Madeline-Ellingson/CIS496-GitActivity/assets/93016306/aea29b38-fe27-40e0-a36b-a376f667c660)
 
 When you make a pull request you want it to be descriptive as to what you are adding and the code changes made. In the next steps we will learn how to make a *pull request template* that will help to organize this information. 
 
 **Step 5:** Delete this blank pull request by hitting the "Close pull request" button at the bottom of the screen. It won't remove it from the git history so you won't have a spotless repository but that is ok we are still learning!
 
 **Step 6:** Hop back into vscode on the part 2 branch and create the following folder in the root directory `.github`. This is where we will store our template. GitHub knows to look in this folder. 
+
+**Root Directory:** It is just the very first folder in your repo. In your case it would be anything inside the CIS496-GitActivity-YourName folder.  
 
 **Step 7:** Create a file `pull_request_template.md` and add the following text inside. 
 
@@ -136,9 +142,7 @@ This template features a few nice things that can help you keep track of code ch
 
 A lot of this doesn't apply to what we are doing in this activity but is very nice to utilize in your personal projects and you will absolutely see something very similar if you ever go into industry as a software developer.
 
-**Step 8:** Commit this file to your part2 branch and try to make a pull request again. You should now see your lovely template. Fill it out with what information you think is relevant or just throw a nice meme in there and create your PR. 
-
-Isn't that a lot better?
+**Step 8:** Commit this file to your part2 branch and try to make a pull request again. When you pull request again in part 3 you will see this template. If not that is ok make sure your file names are named properly they are case sensitive.
 
 **Step 9:** If GitHub gives you the green light to merge into main then go ahead and do so.
 
@@ -150,7 +154,7 @@ In this part we will cover merge conflicts and how to revert a commit.
 
 **Step 1:** Checkout the `part3` branch and try to run the dino game like we did in part 2. Has something changed?
 
-**Step 2:** Make a pull request to merge the `part3` branch into `main`. Once its created you should now see a warning that there is merge conflicts! Oh no!
+**Step 2:** Make a pull request to merge the `part3` branch into `main`. Once its created you should now see a warning that there is merge conflicts! Oh no! But hey you should have a nice template!
 
 **Step 3:** Click on "Resolve Conflicts". You will then be brought to the conflicts editor. Below is an example of what a single line conflict looks like in the `.gitignore` file.
 
